@@ -167,6 +167,14 @@ p + p { margin-top: 0.9rem; }
   font-weight: 800;
   font-size: 1.6rem;
   object-fit: cover;
+  overflow: hidden;
+}
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: center 20%;
 }
 .member .role {
   color: var(--green-500);
