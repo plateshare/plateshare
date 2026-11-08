@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentations | PlateShare</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Presentation embeds (scoped to this page) */
+    .deck { margin-top: 2.5rem; }
+    .deck-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: .5rem;
+      margin-bottom: .75rem;
+    }
+    .deck-meta h3 { margin: 0; }
+    .deck-meta a { white-space: nowrap; }
+    .deck-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      max-height: 80vh;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #f4f5f7;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    }
+    .deck-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .deck-note { margin-top: .5rem; font-size: .9rem; color: #6b7280; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="brand-mark"></span>PlateShare</a>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Project</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="deliverables.html">Deliverables</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>Presentations</h1>
+        <p>Slides from our project iterations, from the initial concept to the working draft feasibility presentation.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <h2>Iteration 1</h2>
+        <p class="lead">Our first presentation: the problem, the proposed solution, and the initial plan for PlateShare.</p>
+
+        <div class="deck">
+          <div class="deck-meta">
+            <h3>Iteration 1 Slides</h3>
+            <a href="https://docs.google.com/presentation/d/1H_qlS0IX3_aK8qPGKZcGUInIRrX0taAG0BXnl17AnVw/edit" target="_blank" rel="noopener">Open in Google Slides &rarr;</a>
+          </div>
+          <div class="deck-frame">
+            <iframe
+              src="https://docs.google.com/presentation/d/1H_qlS0IX3_aK8qPGKZcGUInIRrX0taAG0BXnl17AnVw/embed?start=false&amp;loop=false&amp;delayms=5000"
+              title="PlateShare Iteration 1 Presentation"
+              loading="lazy"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Iteration 2 &mdash; Working Draft Feasibility Presentation</h2>
+        <p class="lead">Our working draft feasibility presentation, covering feasibility and progress toward the final deliverable.</p>
+
+        <div class="deck">
+          <div class="deck-meta">
+            <h3>Iteration 2 Slides</h3>
+            <a href="https://docs.google.com/presentation/d/13-fhXBNROjkMOlmtgKYs2WMTvCuqNaHMVLN6tt645qU/edit" target="_blank" rel="noopener">Open in Google Slides &rarr;</a>
+          </div>
+          <div class="deck-frame">
+            <iframe
+              src="https://docs.google.com/presentation/d/13-fhXBNROjkMOlmtgKYs2WMTvCuqNaHMVLN6tt645qU/embed?start=false&amp;loop=false&amp;delayms=5000#slide=id.h581fc2a5704b5f13_1_45"
+              title="PlateShare Working Draft Feasibility Presentation"
+              loading="lazy"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <p class="deck-note">If a presentation does not load, use the &ldquo;Open in Google Slides&rdquo; link above it.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; 2026 PlateShare Team &middot; Old Dominion University</span>
+      <span>CS 410 / CS 411W &middot; <a href="team.html">Meet the team</a></span>
+    </div>
+  </footer>
+
+</body>
+</html>
