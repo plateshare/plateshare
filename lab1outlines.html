@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 1 Outline | PlateShare</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Lab embeds (scoped to this page) */
+    .deck { margin-top: 2.5rem; }
+    .deck-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: .5rem;
+      margin-bottom: .75rem;
+    }
+    .deck-meta h3 { margin: 0; }
+    .deck-meta a { white-space: nowrap; }
+    .deck-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      max-height: 80vh;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #f4f5f7;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    }
+    .deck-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .deck-note { margin-top: .5rem; font-size: .9rem; color: #6b7280; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="brand-mark"></span>PlateShare</a>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Project</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="deliverables.html">Deliverables</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>Lab 1 Outline</h1>
+        <p>Versions of our outline for Lab 1</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <h1>Current Iteration:</h1>
+        <div class="deck"></div>
+        <p class="lead">Our current iteration of the Lab 1 Outline. Currently a WIP.</p>
+
+        <div class="deck">
+          <div class="deck-meta">
+            <h3>Outline Document</h3>
+            <a href="https://docs.google.com/document/d/1AeDBi_cq5JiYJeIVn3iopTUojtsuzVtuKHEoNvWnHPY/edit" target="_blank" rel="noopener">Open in Google Docs &rarr;</a>
+          </div>
+          <div class="deck-frame">
+            <iframe
+              src="https://docs.google.com/document/d/1AeDBi_cq5JiYJeIVn3iopTUojtsuzVtuKHEoNvWnHPY/preview"
+              title="PlateShare Lab 1 Outline"
+              loading="lazy"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+        <p class="deck-note">If the lab does not load, use the &ldquo;Open in Google Docs&rdquo; link above it.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; 2026 PlateShare Team &middot; Old Dominion University</span>
+      <span>CS 410 / CS 411W &middot; <a href="team.html">Meet the team</a></span>
+    </div>
+  </footer>
+
+</body>
+</html>
