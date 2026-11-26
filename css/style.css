@@ -31,7 +31,11 @@ body {
 a { color: var(--green-700); }
 a:hover { color: var(--green-500); }
 
-.container { width: 90%; max-width: var(--max); margin: 0 auto; }
+.container {
+  width: 90%;
+  max-width: var(--max);
+  margin: 0 auto;
+}
 
 
 /* ---------- Header / Nav ---------- */
@@ -97,11 +101,11 @@ a:hover { color: var(--green-500); }
 .nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 0.25rem;
   flex-wrap: nowrap;
   list-style: none;
-  margin: 0;
+  margin-left: auto;
   padding: 0;
 }
 
