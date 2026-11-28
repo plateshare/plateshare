@@ -146,7 +146,7 @@ a:hover { color: var(--green-500); }
 
 /* ---------- Hero ---------- */
 .hero {
-  background: linear-gradient(135deg, var(--green-900), var(--green-700));
+  background: linear-gradient(135deg, var(--green-900), var(--green-500));
   color: var(--white);
   padding: 5rem 0 4.5rem;
 }
@@ -181,7 +181,7 @@ a:hover { color: var(--green-500); }
 
 /* ---------- Page header (inner pages) ---------- */
 .page-header {
-  background: var(--green-900);
+  background: linear-gradient(135deg, var(--green-900), var(--green-500));
   color: var(--white);
   padding: 3rem 0 2.5rem;
 }
@@ -260,6 +260,7 @@ table {
   border-radius: var(--radius);
   overflow: hidden;
   font-size: 0.97rem;
+  color: var(--muted)
 }
 th, td { text-align: left; padding: 0.85rem 1rem; border-bottom: 1px solid var(--line); }
 th { background: var(--green-100); color: var(--green-900); font-weight: 700; }
@@ -311,7 +312,7 @@ tr:last-child td { border-bottom: none; }
 }
 
 .references li {
-  color: var(--ink);
+  color: var(--muted);
   padding-left: 0.5rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
