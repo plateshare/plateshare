@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,10 @@
   <link rel="stylesheet" href="css/style.css">
   <style>
     /* Presentation embeds (scoped to this page) */
-    .deck { margin-top: 2.5rem; }
+    .deck {
+      margin-top: 2.5rem;
+    }
+
     .deck-meta {
       display: flex;
       flex-wrap: wrap;
@@ -16,8 +20,15 @@
       gap: .5rem;
       margin-bottom: .75rem;
     }
-    .deck-meta h3 { margin: 0; }
-    .deck-meta a { white-space: nowrap; }
+
+    .deck-meta h3 {
+      margin: 0;
+    }
+
+    .deck-meta a {
+      white-space: nowrap;
+    }
+
     .deck-frame {
       position: relative;
       width: 100%;
@@ -29,6 +40,7 @@
       background: #f4f5f7;
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
     }
+
     .deck-frame iframe {
       position: absolute;
       inset: 0;
@@ -36,30 +48,36 @@
       height: 100%;
       border: 0;
     }
-    .deck-note { margin-top: .5rem; font-size: .9rem; color: #6b7280; }
+
+    .deck-note {
+      margin-top: .5rem;
+      font-size: .9rem;
+      color: #6b7280;
+    }
   </style>
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="container">
-    <a class="brand" href="index.html">
-      <span class="brand-image">
-        <img src="images/platesharelogoWIP.png" alt="">
-      </span>
-      <span>PlateShare</span>
-    </a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-image">
+          <img src="images/platesharelogoWIP.png" alt="">
+        </span>
+        <span>PlateShare</span>
+      </a>
 
-    <ul class="nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">Project</a></li>
-      <li><a href="team.html">Team</a></li>
-      <li><a class="active" href="deliverables.html">Deliverables</a></li>
-      <li><a href="glossary.html">Glossary</a></li>
-      <li><a href="references.html">References</a></li>
-    </ul>
-  </div>
-</header>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Project</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a class="active" href="deliverables.html">Deliverables</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </div>
+  </header>
 
   <main>
     <div class="page-header">
@@ -71,36 +89,43 @@
 
     <section>
       <div class="container">
-        <h1>Current Iteration:</h1>
-        <div class="deck"></div>
-        <h2>Design Iteration 1</h2>
-        <p class="lead">Our first presentation.</p>
+        <h2>Working Draft Design Presentation</h2>
+        <p class="lead">
+          The current working draft of our PlateShare Design
+          Presentation, including our proposed system architecture,
+          algorithms, and prototype design.
+        </p>
 
         <div class="deck">
           <div class="deck-meta">
-            <h3>Iteration 1 Slides</h3>
-            <a href="https://docs.google.com/presentation/d/1iMqJJXdOBHz2_IlA0gbytzOw8HUxsQhEESs0V4iCkCE/edit?usp=sharing" target="_blank" rel="noopener">Open in Google Slides &rarr;</a>
+            <h3>Design Presentation — Iteration 1</h3>
+            <a href="https://docs.google.com/presentation/d/1iMqJJXdOBHz2_IlA0gbytzOw8HUxsQhEESs0V4iCkCE/edit?usp=sharing"
+              target="_blank" rel="noopener">Open in Google Slides &rarr;</a>
           </div>
           <div class="deck-frame">
             <iframe
               src="https://docs.google.com/presentation/d/1iMqJJXdOBHz2_IlA0gbytzOw8HUxsQhEESs0V4iCkCE/embed?start=false&amp;loop=false&amp;delayms=5000"
-              title="PlateShare Iteration 1 Presentation"
-              loading="lazy"
-              allowfullscreen></iframe>
+              title="PlateShare Working Draft Design Presentation" loading="lazy" allowfullscreen></iframe>
           </div>
+
+          <p class="deck-note">
+            If the presentation does not load, use the
+            &ldquo;Open in Google Slides&rdquo; link above it.
+          </p>
+
         </div>
-      </section>
-        <p class="deck-note">If the presentation does not load, use the &ldquo;Open in Google Slides&rdquo; link above it.</p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <span>&copy; 2026 PlateShare Team · <a href= "https://www.odu.edu/computer-science">Computer Science</a> · <a href="https://www.odu.edu/">Old Dominion University</a></span>
+      <span>&copy; 2026 PlateShare Team · <a href="https://www.odu.edu/computer-science">Computer Science</a> · <a
+          href="https://www.odu.edu/">Old Dominion University</a></span>
       <span>CS 410 / CS 411W &middot; <a href="team.html">Meet the team</a></span>
     </div>
   </footer>
 
 </body>
+
 </html>

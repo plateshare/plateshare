@@ -1,86 +1,483 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="PlateShare — CS 410 / CS 411W team project at Old Dominion University.">
+  <meta name="description" content="PlateShare — A centralized food donation platform designed to reduce food waste and improve food accessibility. CS 410 / CS 411W team project at Old Dominion University.">
   <title>PlateShare | CS 410 Team Website</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
+  <!-- ---------- Header / Navigation ---------- -->
 
-<header class="site-header">
-  <div class="container">
-    <a class="brand" href="index.html">
-      <span class="brand-image">
-        <img src="images/platesharelogoWIP.png" alt="">
-      </span>
-      <span>PlateShare</span>
-    </a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-image">
+          <img src="images/platesharelogoWIP.png" alt="">
+        </span>
+        <span>PlateShare</span>
+      </a>
 
-    <ul class="nav">
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="about.html">Project</a></li>
-      <li><a href="team.html">Team</a></li>
-      <li><a href="deliverables.html">Deliverables</a></li>
-      <li><a href="glossary.html">Glossary</a></li>
-      <li><a href="references.html">References</a></li>
-    </ul>
-  </div>
-</header>
-
+      <ul class="nav">
+        <li><a class="active" href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">Project</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="deliverables.html">Deliverables</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </div>
+  </header>
 
   <main>
+
+    <!-- ---------- Elevator Pitch ---------- -->
+
     <div class="hero">
       <div class="container">
-        <span class="eyebrow">CS 410 · CS 411W · Old Dominion University</span>
+        <span class="eyebrow">
+          CS 410 · CS 411W · Old Dominion University
+        </span>
+
         <h1>Getting surplus food to people who need it.</h1>
-        <p>PlateShare connects restaurants, grocers, and caterers that have surplus food with food banks, shelters, and community organizations that can put it to use, before it goes to waste.</p>
+
+        <p>
+          PlateShare is a centralized food donation platform
+          designed to connect restaurants, grocery stores,
+          and caterers with food banks, shelters, community
+          organizations, and volunteer drivers. By simplifying
+          donation listings, recipient matching, and pickup
+          coordination, PlateShare aims to reduce unnecessary
+          food waste and improve food accessibility within
+          local communities.
+        </p>
+
         <div class="actions">
-          <a class="btn btn-primary" href="about.html">About the Project</a>
-          <a class="btn btn-ghost" href="deliverables.html">View Deliverables</a>
+          <a class="btn btn-primary" href="about.html">
+            About the Project
+          </a>
+
+          <a class="btn btn-ghost" href="deliverables.html">
+            View Deliverables
+          </a>
         </div>
       </div>
     </div>
 
+    <!-- ---------- Problem Description ---------- -->
+
     <section>
       <div class="container">
         <h2>The Problem</h2>
-        <p class="lead">Businesses throw away large amounts of edible food every day, while many households in the same communities don't have enough to eat. Donating is often harder than discarding: there's no easy way to find a recipient, arrange pickup, or track what was given.</p>
+
+        <p class="lead">
+          Businesses throw away large amounts of edible food
+          every day, while many households in the same
+          communities experience food insecurity. Donating
+          surplus food is often more difficult than discarding
+          it because businesses lack an efficient way to find
+          recipients, coordinate transportation, and track
+          completed donations.
+        </p>
 
         <div class="grid grid-3">
+
           <div class="card">
-            <div class="num">01 · POST</div>
-            <h3>Donors list surplus</h3>
-            <p>Food businesses post available surplus with quantity, type, and a pickup window in a few taps.</p>
+            <div class="num">01 · FOOD WASTE</div>
+            <h3>Unnecessary Food Disposal</h3>
+            <p>
+              Restaurants, grocery stores, and other food
+              businesses frequently have surplus food that
+              could be redistributed rather than discarded.
+            </p>
           </div>
+
           <div class="card">
-            <div class="num">02 · MATCH</div>
-            <h3>Recipients claim it</h3>
-            <p>Nearby food banks and shelters are notified and can claim donations that fit their needs.</p>
+            <div class="num">02 · FOOD INSECURITY</div>
+            <h3>Limited Food Accessibility</h3>
+            <p>
+              Food banks, shelters, and charitable
+              organizations need reliable access to food
+              donations to support individuals and families
+              experiencing food insecurity.
+            </p>
           </div>
+
           <div class="card">
-            <div class="num">03 · TRACK</div>
-            <h3>Impact is recorded</h3>
-            <p>Every completed pickup is logged, giving donors records of what they gave and the impact it had.</p>
+            <div class="num">03 · LOGISTICS</div>
+            <h3>Donation Coordination</h3>
+            <p>
+              Communication difficulties, limited
+              transportation, and time-sensitive pickup
+              requirements create barriers to successful
+              food redistribution.
+            </p>
           </div>
+
+        </div>
+
+        <p style="margin-top: 1.5rem;">
+          Additional research supporting the PlateShare
+          problem statement can be found on our
+          <a href="references.html">References</a> page.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ---------- Customers and End Users ---------- -->
+
+    <section>
+      <div class="container">
+        <h2>Customers and End Users</h2>
+
+        <p class="lead">
+          PlateShare is designed to support businesses,
+          charitable organizations, and volunteers involved
+          in the collection and redistribution of surplus food.
+          Each group plays an important role in connecting
+          available food with communities that need it.
+        </p>
+
+        <div class="grid grid-2">
+
+          <div class="card">
+            <div class="num">CUSTOMERS</div>
+            <h3>Participating Organizations</h3>
+            <p>
+              PlateShare's intended organizational customers
+              include food businesses and charitable
+              organizations seeking a more efficient way
+              to manage food donations, coordinate pickups,
+              and participate in local food redistribution.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="num">END USERS</div>
+            <h3>Food Donors</h3>
+            <p>
+              Restaurant employees, grocery store employees,
+              caterers, and other authorized business
+              representatives who use PlateShare to list
+              available surplus food and manage donations.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="num">END USERS</div>
+            <h3>Recipient Organizations</h3>
+            <p>
+              Food bank employees, shelter staff, and
+              nonprofit representatives who use PlateShare
+              to discover available donations, claim food,
+              and coordinate its receipt and distribution.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="num">END USERS</div>
+            <h3>Volunteer Drivers</h3>
+            <p>
+              Individuals who use PlateShare to receive
+              delivery assignments, collect food donations
+              from participating businesses, and transport
+              them to recipient organizations.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="num">END USERS</div>
+            <h3>Platform Administrators</h3>
+            <p>
+              Authorized users responsible for managing
+              accounts, monitoring platform activity,
+              maintaining system integrity, and supporting
+              participating organizations.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="num">BENEFICIARIES</div>
+            <h3>Individuals and Families</h3>
+            <p>
+              Community members experiencing food insecurity
+              who benefit from increased access to donated
+              food through participating food banks,
+              shelters, and charitable organizations.
+            </p>
+          </div>
+
         </div>
       </div>
     </section>
 
+    <!-- ---------- Solution Statement ---------- -->
+
+    <section>
+      <div class="container">
+        <h2>Our Solution</h2>
+
+        <p class="lead">
+          PlateShare proposes a centralized food donation
+          platform that simplifies communication and
+          coordination between food donors, recipient
+          organizations, and volunteer drivers.
+        </p>
+
+        <p>
+          The platform will allow participating businesses
+          to create donation listings containing information
+          about available food, quantities, pickup locations,
+          and pickup windows. Recipient organizations will
+          be able to discover and claim suitable donations,
+          while volunteers will assist with transportation
+          when needed.
+        </p>
+
+        <p>
+          Through automated notifications, volunteer
+          assignment, and donation tracking, PlateShare
+          aims to reduce the logistical barriers associated
+          with food redistribution and provide a more
+          organized, accessible, and efficient donation
+          process.
+        </p>
+
+        <div class="grid grid-3" style="margin-top: 2rem;">
+
+          <div class="card">
+            <h3>Reduce Food Waste</h3>
+            <p>
+              Provide businesses with a convenient way
+              to redistribute surplus food before it
+              is discarded.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Improve Food Accessibility</h3>
+            <p>
+              Connect recipient organizations with
+              available donations that can support
+              individuals experiencing food insecurity.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Simplify Coordination</h3>
+            <p>
+              Centralize donation listings, notifications,
+              volunteer assignments, and delivery tracking
+              within a single platform.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- How PlateShare Works ---------- -->
+
+    <section>
+      <div class="container">
+        <h2>How PlateShare Works</h2>
+
+        <p class="lead">
+          PlateShare is designed to simplify the food
+          donation process from the initial donation
+          listing through successful delivery.
+        </p>
+
+        <div class="grid grid-3">
+
+          <div class="card">
+            <div class="num">01 · POST</div>
+            <h3>Donors List Surplus</h3>
+            <p>
+              Food businesses create donation listings
+              containing the food type, quantity,
+              pickup location, and available pickup window.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="num">02 · NOTIFY</div>
+            <h3>Recipients Receive Alerts</h3>
+            <p>
+              Relevant recipient organizations receive
+              notifications about available donations
+              that may meet their needs.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="num">03 · CLAIM</div>
+            <h3>Recipients Claim Donations</h3>
+            <p>
+              Recipient organizations review available
+              donation listings and claim food that
+              meets their needs and capacity.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="num">04 · ASSIGN</div>
+            <h3>Volunteers Are Assigned</h3>
+            <p>
+              When transportation is required, suitable
+              volunteer drivers are identified based
+              on relevant delivery requirements and
+              availability.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="num">05 · DELIVER</div>
+            <h3>Food Is Transported</h3>
+            <p>
+              Volunteers collect the donated food from
+              participating businesses and deliver it
+              to the designated recipient organizations.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="num">06 · TRACK</div>
+            <h3>Donation Activity Is Recorded</h3>
+            <p>
+              Completed donations are recorded, allowing
+              participating organizations to review
+              donation history and monitor their
+              redistribution efforts.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- Project Goals ---------- -->
+
+    <section>
+      <div class="container">
+        <h2>Project Goals</h2>
+
+        <p class="lead">
+          The primary objectives of PlateShare are to
+          improve the efficiency of food redistribution
+          and reduce barriers to successful donations.
+        </p>
+
+        <div class="grid grid-2">
+
+          <div class="card">
+            <h3>Environmental Impact</h3>
+            <p>
+              Reduce the amount of edible surplus food
+              that is unnecessarily discarded by
+              participating businesses.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Community Impact</h3>
+            <p>
+              Support charitable organizations in
+              providing food to individuals and
+              families experiencing food insecurity.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Operational Efficiency</h3>
+            <p>
+              Simplify communication, donation management,
+              and transportation coordination between
+              participating users.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Accountability and Tracking</h3>
+            <p>
+              Maintain organized donation records and
+              status updates to improve transparency
+              throughout the redistribution process.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- About This Site ---------- -->
+
     <section>
       <div class="container">
         <h2>About This Site</h2>
-        <p class="lead">This website is our team's electronic portfolio for CS 410 (Professional Workforce Development I) and CS 411W (Professional Workforce Development II). All project deliverables, including presentations, specifications, and prototype materials, will be posted on the <a href="deliverables.html">Deliverables</a> page as they are completed.</p>
+
+        <p class="lead">
+          This website is our team's electronic portfolio
+          for CS 410 (Professional Workforce Development I)
+          and CS 411W (Professional Workforce Development II)
+          at Old Dominion University.
+        </p>
+
+        <p>
+          All project deliverables, including presentations,
+          specifications, design documentation, and prototype
+          materials, will be posted on the
+          <a href="deliverables.html">Deliverables</a>
+          page as they are completed.
+        </p>
+
+        <p>
+          Additional information about the project can
+          be found on the <a href="about.html">Project</a>
+          page. Information about our development team,
+          project terminology, and supporting research
+          can be found on the
+          <a href="team.html">Team</a>,
+          <a href="glossary.html">Glossary</a>, and
+          <a href="references.html">References</a> pages.
+        </p>
+
+        <div style="margin-top: 1.5rem;">
+          <a class="btn btn-primary" href="deliverables.html">
+            Explore Project Deliverables
+          </a>
+        </div>
+
       </div>
     </section>
+
   </main>
+
+  <!-- ---------- Footer ---------- -->
 
   <footer class="site-footer">
     <div class="container">
-      <span>&copy; 2026 PlateShare Team · <a href= "https://www.odu.edu/computer-science">Computer Science</a> · <a href="https://www.odu.edu/">Old Dominion University</a></span>
-      <span>CS 410 / CS 411W · <a href="team.html">Meet the team</a></span>
+
+      <span>
+        &copy; 2026 PlateShare Team ·
+        <a href="https://www.odu.edu/computer-science">
+          Computer Science
+        </a> ·
+        <a href="https://www.odu.edu/">
+          Old Dominion University
+        </a>
+      </span>
+
+      <span>
+        CS 410 / CS 411W ·
+        <a href="team.html">Meet the team</a>
+      </span>
+
     </div>
   </footer>
 
