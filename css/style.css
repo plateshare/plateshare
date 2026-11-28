@@ -401,3 +401,129 @@ tr:last-child td { border-bottom: none; }
     padding-left: 0.25rem;
   }
 }
+
+
+/* ---------- Tab Buttons ---------- */
+/* Background surrounding all the buttons */
+.tab-bar {
+  width: fit-content;
+  max-width: calc(100% - 2rem);
+  margin: 1rem auto 2rem;
+  padding: 0.4rem;
+  background: #f0f4f1;
+  border: 1px solid #e1eae4;
+  border-radius: 14px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding: 0.4rem;
+  background: transparent;
+  border-radius: 12px;
+  width: fit-content;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.tab-buttons .container {
+  justify-content: center;
+}
+
+/* Removes the border at the top of sections for pages that use button tabs*/
+.tab-buttons section + section {
+  border-top: none;
+}
+
+.tab-buttons button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--green-900);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Unselected button - normal */
+.tab-buttons button:not(.active) {
+  background: transparent;
+  color: var(--green-900);
+}
+
+/* Unselected buttno - hovered */
+.tab-buttons button:not(.active):hover {
+  background: #dceae2;
+}
+
+/* selected button - normal */
+.tab-buttons button.active {
+  background: var(--green-700);
+  color: white;
+}
+
+/* selected button - hovered */
+.tab-buttons button.active:hover {
+  background: #2a6f52; 
+  /*color: var(--green-900);*/
+}
+
+/* ---------- Presentations pages ---------- */
+
+.deck {
+      margin-top: 2.5rem;
+    }
+
+    .deck-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: .5rem;
+      margin-bottom: .75rem;
+    }
+
+    .deck-meta h3 {
+      margin: 0;
+    }
+
+    .deck-meta a {
+      white-space: nowrap;
+    }
+
+    .deck-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      max-height: 80vh;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #f4f5f7;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    }
+
+    .deck-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .deck-note {
+      margin-top: .5rem;
+      font-size: .9rem;
+      color: #6b7280;
+    }

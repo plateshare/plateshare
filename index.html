@@ -24,7 +24,7 @@
 
       <ul class="nav">
         <li><a class="active" href="index.html" aria-current="page">Home</a></li>
-        <li><a href="about.html">Project</a></li>
+        <!-- <li><a href="about.html">Project</a></li> -->
         <li><a href="team.html">Team</a></li>
         <li><a href="deliverables.html">Deliverables</a></li>
         <li><a href="glossary.html">Glossary</a></li>
@@ -68,11 +68,25 @@
       </div>
     </div>
 
-    <!-- ---------- Problem Description ---------- -->
+    <!-- ---------- Description Expansion Buttons ---------- -->
 
-    <section>
-      <div class="container">
-        <h2>The Problem</h2>
+  <div class="tabs tab-buttons">
+    <div class="tab-bar">
+      <div class="tab-buttons">
+        <button class="active" data-tab="problem">The Problem</button>
+        <button data-tab="customers">Customers and End Users</button>
+        <button data-tab="solution">Our Solution</button>
+        <button data-tab="howitworks">How Does It Work?</button>
+        <button data-tab="projectgoals">Project Goals</button>
+        <button data-tab="aboutthesite">About This Site</button>
+      </div>
+    </div>
+
+  <div class="container">
+
+    <!-- ---------- Problem Description ---------- -->
+    <section class="tab-content active" id="problem">
+      <h2>The Problem</h2>
 
         <p class="lead">
           Businesses throw away large amounts of edible food
@@ -125,15 +139,11 @@
           problem statement can be found on our
           <a href="references.html">References</a> page.
         </p>
-
-      </div>
     </section>
 
     <!-- ---------- Customers and End Users ---------- -->
-
-    <section>
-      <div class="container">
-        <h2>Customers and End Users</h2>
+    <section class="tab-content" id="customers">
+      <h2>Customers and End Users</h2>
 
         <p class="lead">
           PlateShare is designed to support businesses,
@@ -211,16 +221,12 @@
               shelters, and charitable organizations.
             </p>
           </div>
-
         </div>
-      </div>
     </section>
 
-    <!-- ---------- Solution Statement ---------- -->
-
-    <section>
-      <div class="container">
-        <h2>Our Solution</h2>
+    <!-- ---------- Our solution ---------- -->
+    <section class="tab-content" id="solution">
+      <h2>Our Solution</h2>
 
         <p class="lead">
           PlateShare proposes a centralized food donation
@@ -276,16 +282,12 @@
               within a single platform.
             </p>
           </div>
-
         </div>
-      </div>
     </section>
 
-    <!-- ---------- How PlateShare Works ---------- -->
-
-    <section>
-      <div class="container">
-        <h2>How PlateShare Works</h2>
+    <!-- ---------- How it works ---------- -->
+    <section class="tab-content" id="howitworks">
+      <h2>How PlateShare Works</h2>
 
         <p class="lead">
           PlateShare is designed to simplify the food
@@ -356,16 +358,12 @@
               redistribution efforts.
             </p>
           </div>
-
         </div>
-      </div>
     </section>
 
-    <!-- ---------- Project Goals ---------- -->
-
-    <section>
-      <div class="container">
-        <h2>Project Goals</h2>
+      <!-- ---------- Project Goals ---------- -->
+    <section class="tab-content" id="projectgoals">
+      <h2>Project Goals</h2>
 
         <p class="lead">
           The primary objectives of PlateShare are to
@@ -410,16 +408,12 @@
               throughout the redistribution process.
             </p>
           </div>
-
         </div>
-      </div>
     </section>
 
-    <!-- ---------- About This Site ---------- -->
-
-    <section>
-      <div class="container">
-        <h2>About This Site</h2>
+    <!-- ---------- About the site ---------- -->
+    <section class="tab-content" id="aboutthesite">
+      <h2>About This Site</h2>
 
         <p class="lead">
           This website is our team's electronic portfolio
@@ -452,11 +446,10 @@
             Explore Project Deliverables
           </a>
         </div>
-
-      </div>
     </section>
 
-  </main>
+  </div>
+</div>
 
   <!-- ---------- Footer ---------- -->
 
@@ -480,6 +473,30 @@
 
     </div>
   </footer>
+
+
+<script>
+  const buttons = document.querySelectorAll(".tab-buttons button");
+  const sections = document.querySelectorAll(".tab-content");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+
+      // Deactivate all buttons
+      buttons.forEach(btn => btn.classList.remove("active"));
+
+      // Hide all sections
+      sections.forEach(section => section.classList.remove("active"));
+
+      // Activate clicked button
+      button.classList.add("active");
+
+      // Show corresponding section
+      document.getElementById(button.dataset.tab).classList.add("active");
+
+    });
+  });
+</script>
 
 </body>
 </html>
